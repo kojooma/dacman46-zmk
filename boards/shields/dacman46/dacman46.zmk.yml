@@ -1,0 +1,13 @@
+file_format: "1"
+id: dacman46
+name: Dactyl Manuform 4x6
+type: shield
+url: https://github.com/your-username/dacman46-zmk/
+requires: [pro_micro]
+features:
+  - keys
+  - underglow
+  - studio
+siblings:
+  - dacman46_left
+  - dacman46_right

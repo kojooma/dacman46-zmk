@@ -1,0 +1,16 @@
+if SHIELD_DACMAN46_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Dactyl Manuform 4x6"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_DACMAN46_LEFT || SHIELD_DACMAN46_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
