@@ -14,18 +14,18 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  F  |
-// |  A  |  S  |  G  |  H  |
-// |  Z  |  X  |     |     |
-// |  C  |  V  |     |     |
-// |  B  |  N  |     |     |
+// | ESC |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  | BSPC|
+// | TAB |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  | ENT |
+// |LSFT |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |RSFT |
+// |LCTL |LGUI |LALT |     |     | SPC | SPC |     |     |RALT |RGUI |RCTL |
+// |     |     |     |     |     |     |     |     |     |     |     |     |
                         bindings = <
-   &kp Q &kp W &kp E &kp F
-   &kp A &kp S &kp G &kp H
-   &kp Z &kp X &trans &trans
-   &kp C &kp V &trans &trans
-   &kp B &kp N &trans &trans
+    &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P    &kp BSPC
+    &kp TAB   &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K    &kp L    &kp SEMI &kp RET
+    &kp LSFT  &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMMA&kp DOT  &kp FSLH &kp RSFT
+    &kp LCTRL &kp LGUI &kp LALT &trans   &trans   &kp SPC  &kp SPC  &trans   &trans   &kp RALT &kp RGUI &kp RCTRL
+    &trans    &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
                         >;
                 };
         };
-};
+}; 
