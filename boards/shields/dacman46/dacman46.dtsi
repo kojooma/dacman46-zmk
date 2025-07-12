@@ -9,7 +9,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &dacman46_layout;
+        zmk,matrix_transform = &zmk_matrix_transform_default;
     };
 
     dacman46_layout: dacman46_layout {
