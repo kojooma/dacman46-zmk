@@ -6,9 +6,7 @@
 
 #include "dacman46.dtsi"
 
-&default_transform {
-    col-offset = <2>;
-};
+
 
 &kscan0 {
     col-gpios
