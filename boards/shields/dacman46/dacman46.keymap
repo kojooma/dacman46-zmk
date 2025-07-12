@@ -14,11 +14,17 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  A  |  B  |
-// |  C  |  D  |
+// |  Q  |  W  |  E  |  F  |
+// |  A  |  S  |  G  |  H  |
+// |  Z  |  X  |     |     |
+// |  C  |  V  |     |     |
+// |  B  |  N  |     |     |
                         bindings = <
-   &kp A &kp B
-   &kp C &kp D
+   &kp Q &kp W &kp E &kp F
+   &kp A &kp S &kp G &kp H
+   &kp Z &kp X &trans &trans
+   &kp C &kp V &trans &trans
+   &kp B &kp N &trans &trans
                         >;
                 };
         };
