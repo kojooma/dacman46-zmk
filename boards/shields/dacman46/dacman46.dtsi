@@ -12,23 +12,16 @@
         zmk,matrix_transform = &zmk_matrix_transform_default;
     };
 
-    dacman46_layout: dacman46_layout {
-        compatible = "zmk,matrix-transform";
-        columns = <2>;
-        rows = <2>;
-        map = <
-RC(0,0) RC(0,1)
-RC(1,0) RC(1,1)
-        >;
-    };
-
     zmk_matrix_transform_default: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <2>;
-        rows = <2>;
+        rows = <5>;
         map = <
 RC(0,0) RC(0,1)
 RC(1,0) RC(1,1)
+RC(2,0) RC(2,1)
+RC(3,0) RC(3,1)
+RC(4,0) RC(4,1)
         >;
     };
 
@@ -38,8 +31,11 @@ RC(1,0) RC(1,1)
 
         diode-direction = "col2row";
         row-gpios
-            = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
 
     };
